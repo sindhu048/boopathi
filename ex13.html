@@ -4,31 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        ul#menu{
-            padding: 0;
+    <script>
+        function checkPalindrome(string){
+            const arrayValues=string.split('');
+            const reverseArrayValues=arrayValues.reverse();
+            const reverseString=reverseArrayValues.join('');
+            if(string==reverseString){
+                console.log('It is a palindrome');
+            }
+            else{
+                console.log('It is not palindrome');
+            }
         }
-        ul#menu li{
-            display: inline;
-        }
-        ul#menu li a{
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 4px 4px 0 0;
-        }
-        ul#menu li a:hover{
-            background-color: orange;
-        }
-    </style>
+        const string=prompt('Enter a string:');
+        checkPalindrome(string);
+    </script>
 </head>
 <body>
-    <ul id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    
 </body>
 </html>

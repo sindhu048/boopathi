@@ -4,27 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        div.cities{
-            background-color: black;
-            color: white;
-            margin: 20px;
-            padding: 20px;
+    <script>
+        function checkPalindrome(string){
+            const arrayValues=string.split('');
+            const reverseArrayValues=arrayValues.reverse();
+            const reverseString=reverseArrayValues.join('');
+            if(string==reverseString){
+                console.log('It is a palindrome');
+            }
+            else{
+                console.log('It is not palindrome');
+            }
         }
-        span.note{
-            font-size: 120%;
-            color: red;
-        }
-    </style>
+        const string=prompt('Enter a string:');
+        checkPalindrome(string);
+    </script>
 </head>
 <body>
-    <div class="cities">
-        <h2>London</h2>
-        <p>London is the capital city of England. It is the most populous 
-            city in the United Kingdom, with a metropolitan area of over 13 million 
-            inhabitants.</p>
-             <p>This is some <span class="note">important</span> text.</p>
-    </div>
     
 </body>
 </html>

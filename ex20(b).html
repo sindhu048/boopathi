@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        const string='Mr Red has a red house and a red car';
-        const newText=string.replace('red','blue');
-        console.log(newText);
-    </script>
 </head>
 <body>
-    
+    <form>
+        <input type="text" onchange="if(parseInt(this.value)<=5){
+            alert('Please enter a number greater than 5.');
+        }">
+    </form>    
 </body>
 </html>

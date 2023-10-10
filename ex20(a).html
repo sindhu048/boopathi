@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        const string='Mr Red has a red house and a red car';
-        const newText=string.replace('red','blue');
-        console.log(newText);
-    </script>
 </head>
 <body>
-    
+    <form name="st">
+        <input type="text" size="65" name="input1"><br>
+        <input type="button" value="Change" onclick="window.status=document.st.input1.value;">
+    </form>
 </body>
 </html>
